@@ -1,4 +1,4 @@
-def mode(arr)
+	def mode(arr)
 num_rep=[]
 may=[]
 	arr.each do |x|
