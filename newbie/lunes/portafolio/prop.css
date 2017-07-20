@@ -1,0 +1,32 @@
+body{
+  color: white;
+  background-image: url(http://www.rubyinside.com/advent2006/wallpaper1024.jpg);
+}
+#letra{
+
+  color: green;
+}
+.hola{
+font-size: bold;
+
+
+}
+#uppercase{
+  text-transform: uppercase;
+}
+#parrafos{
+
+  font-style: bold,italic;
+  font-variant: small-caps;
+  text-align: center;
+  font-size: 20px;
+  text-align: center;
+  text-indent: 35px;
+  text-decoration: underline;
+}
+#oscuro{
+text-shadow: 4px black;
+}
+#img{
+margin: 2cm 4cm 3cm 4cm;
+}

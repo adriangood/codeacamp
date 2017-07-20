@@ -3,12 +3,12 @@ a=Benchmark.realtime do
 def fibonacci_iterative(value)
 a=0
 b=1
-value.times do
-
- 	 a=b
-	b=a+b
+ value.times do
+    c=a
+  	 a=b
+	b=c+b
 end
-
+return a
 end
  p fibonacci_iterative(0)
  p fibonacci_iterative(1)
@@ -19,18 +19,18 @@ p fibonacci_iterative(2)
 end
 puts
 puts
-#
+
 # b=Benchmark.realtime do
-# 	if value == 0
+# def fibonacci_recursive(value)
+#   if value == 0
 #       return 0
 #   end
 #   if value == 1
 #   	return 1
 #   end
 #   if value > 1
-#   	return  fibonacci_iterative(value-1) + (fibonacci_iterative(value-2))
+#   	return  fibonacci_recursive(value-1) + (fibonacci_recursive(value-2))
 #   end
-# 	fibonacci_iterative(val)
 # end
 # p fibonacci_recursive(0) == 0
 # p fibonacci_recursive(1) == 1
