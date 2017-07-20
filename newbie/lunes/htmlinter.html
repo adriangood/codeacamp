@@ -1,11 +1,11 @@
 <div id = "divisor">
   <h5 id = "subtitulo">Subtítulo</h5>
   <p>Este es el primer párrafo de contenido.</p>
-<<<<<<< HEAD
+
   <p id="parr">Y este es el segundo párrafo de contenido</p>
-=======
+
   <p>Y este es el segundo párrafo de contenido</p>
->>>>>>> 13ed9ce363430c2b1e9513c82c8c083ac96705ea
+
 </div>
 
 <style>
@@ -13,7 +13,7 @@
     color: #1f8dd3;
     border: 3px yellow solid;
     margin: 3px;
-<<<<<<< HEAD
+
     padding: 1px;
 
   }
@@ -39,15 +39,19 @@ font-style: italic;
     <label for="Nombre">
        Nombre completo:
       <input type="text" name="Nombre">
+</label><br>
     <label for="RFC">
          RFC:
       <input type="text" name="RFC">
+      </label><br>
     <label for="Dirección">
            Dirección:
       <input type="text" name="Dirección">
+      </label><br>
     <label for="email">
         Email:
         <input type="email" name="email">
+      </label><br>
     <label for="Telefono">
       Telefono:
       <input type="text" name="Telefono">
@@ -56,16 +60,15 @@ font-style: italic;
       Descripcion de la compra:
       <textarea form="form_test" rows="4" cols="50"></textarea>
     </label><br>
-    <label for="Tipodepago">
-      Last Name:
-      <input type="select" name="Tipodepago">
-
-
+    <select name="Tipodepago"> Tipo de compra
+      <option value="Efectivo">Efectivo</option>
+      <option value="Cheque">Cheque</option>
+      <option value="Debito">Debito</option>
+      <option value="Credito"selected>Credito</option>
+    </select>
+    <br><br>
+    <input type="submit">
   </fieldset>
 </form>
-=======
-    padding: 5px;
-
   }
 </style>
->>>>>>> 13ed9ce363430c2b1e9513c82c8c083ac96705ea
