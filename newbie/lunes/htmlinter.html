@@ -1,0 +1,60 @@
+<div id = "divisor">
+  <h5 id = "subtitulo">Subtítulo</h5>
+  <p>Este es el primer párrafo de contenido.</p>
+  <p id="parr">Y este es el segundo párrafo de contenido</p>
+</div>
+
+<style>
+  #divisor {
+    color: #1f8dd3;
+    border: 3px yellow solid;
+    margin: 3px;
+    padding: 1px;
+
+  }
+  h5{
+    color: red;
+    font-size: x-large;
+    text-indent: 5px;
+  }
+  p{
+text-indent: 10px;
+line-height: 25pt;
+font-size: 30px;
+font-style: italic;
+  }
+  #parr{
+  text-decoration: line-through;
+  }
+</style>
+
+<form id="form_test">
+  <fieldset>
+    <legend>Informacion Personal</legend>
+    <label for="Nombre">
+       Nombre completo:
+      <input type="text" name="Nombre">
+    <label for="RFC">
+         RFC:
+      <input type="text" name="RFC">
+    <label for="Dirección">
+           Dirección:
+      <input type="text" name="Dirección">
+    <label for="email">
+        Email:
+        <input type="email" name="email">
+    <label for="Telefono">
+      Telefono:
+      <input type="text" name="Telefono">
+    </label><br>
+    <label for="descripcion">
+      Descripcion de la compra:
+      <textarea form="form_test" rows="4" cols="50"></textarea>
+    </label><br>
+    <label for="Tipodepago">
+      Last Name:
+      <input type="select" name="Tipodepago">
+
+
+  </fieldset>
+</form>

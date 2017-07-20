@@ -1,4 +1,3 @@
-
 def food_group(str)
 food_groups = {
     "grano" => ['Arroz','Trigo', 'Avena', 'Cebada', 'Harina'],
@@ -8,12 +7,12 @@ food_groups = {
     "lacteo" => ['Leche', 'Yogurt', 'Queso', 'Crema']
     }
 
-    food_groups.each do |k,v1| 
+    food_groups.each do |k,v1|
     	v1.each do |v2|
-    		 if v2==str 
-    		 	 return k 
+    		 if v2==str
+    		 	 return k
     		 	 else
-  					"comida no encontrada" 
+  					"comida no encontrada"
     		 end
      	end
     end
@@ -33,16 +32,12 @@ end
 # a="Zanahoria"
 
 
-# z="grano"
-# H_nw={}
-# V=food_groups.each_value{|val| val}
-# if b==a
-# 	H_nw<<a
-
-	
-# end
-# p food_groups[z]
+z="grano"
+H_nw={}
+V=food_groups.each_value{|val| val}
+if b==a
+	H_nw<<a
 
 
-
-
+end
+p food_groups[z]
