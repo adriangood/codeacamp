@@ -1,0 +1,44 @@
+
+header {
+  background-color: black;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #808080;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 65px;
+    text-decoration: none;
+}
+.container {
+  margin: 0 auto;
+  width: 768px;
+
+}
+.content{
+
+  width: 768px;
+
+}
+
+.footer{
+  align-content: center;
+  line-height: 20px;
+}
+
+
+
+#logo {
+  display: block;
+  margin: 0 auto;
+}
