@@ -1,74 +1,78 @@
 <div id = "divisor">
-  <h5 id = "subtitulo">Subtítulo</h5>
-  <p>Este es el primer párrafo de contenido.</p>
-
-  <p id="parr">Y este es el segundo párrafo de contenido</p>
-
-  <p>Y este es el segundo párrafo de contenido</p>
-
+  <h1 >WASH-O</h1>
+  <h3>Favor de introducir sus datos correctamente.</h2>
 </div>
-
 <style>
   #divisor {
     color: #1f8dd3;
-    border: 3px yellow solid;
-    margin: 3px;
+    border: 10px black solid;
 
-    padding: 1px;
+background-image: url(https://www.smashingmagazine.com/images/header-contest/full/anewday.jpg);
 
   }
-  h5{
+  h1{
     color: red;
-    font-size: x-large;
-    text-indent: 5px;
+    font-size: 50px;
+    text-align: center;
   }
-  p{
-text-indent: 10px;
-line-height: 25pt;
-font-size: 30px;
-font-style: italic;
+  h3{
+    color: black;
+    text-align: center;
+    font-style: italic;
   }
-  #parr{
-  text-decoration: line-through;
-  }
-</style>
 
+label {
+  display: block;
+  margin: .5em 0 0 0;
+}
+</style>
 <form id="form_test">
   <fieldset>
-    <legend>Informacion Personal</legend>
-    <label for="Nombre">
-       Nombre completo:
-      <input type="text" name="Nombre">
-</label><br>
-    <label for="RFC">
-         RFC:
-      <input type="text" name="RFC">
-      </label><br>
-    <label for="Dirección">
-           Dirección:
-      <input type="text" name="Dirección">
-      </label><br>
-    <label for="email">
-        Email:
-        <input type="email" name="email">
-      </label><br>
-    <label for="Telefono">
-      Telefono:
-      <input type="text" name="Telefono">
-    </label><br>
-    <label for="descripcion">
-      Descripcion de la compra:
-      <textarea form="form_test" rows="4" cols="50"></textarea>
-    </label><br>
-    <select name="Tipodepago"> Tipo de compra
-      <option value="Efectivo">Efectivo</option>
-      <option value="Cheque">Cheque</option>
-      <option value="Debito">Debito</option>
-      <option value="Credito"selected>Credito</option>
-    </select>
-    <br><br>
-    <input type="submit">
+  <legend>Informacion Personal</legend>
+  <label for="Nombre">
+   Nombre completo:
+  <input type="text" name="Nombre">
+  </label><br>
+
+  <label for="RFC">
+   RFC:
+  <input type="text" name="RFC">
+  </label><br>
+
+  <label for="Dirección">
+   Direccion:
+  <input type="text" name="Direccion">
+  </label><br>
+
+  <label for="email">
+  Email:
+  <input type="email" name="email">
+  </label><br>
+
+  <label for="Telefono">
+  Telefono:
+  <input type="text" name="Telefono">
+  </label><br>
+
+  <label for="Monto">
+   Monto:
+  <input type="number" name="Monto">
+  </label><br>
+
+  <label for="descripcion">
+    Description:
+    <br><textarea form="form_test" rows="4" cols="50"></textarea>
+  </label><br>
+
+  <p> Tipo de pago:<select></p>
+  <option value="Efectivo">Efectivo</option>
+  <option value="Cheque">Cheque</option>
+  <option value="Debito">Debito</option>
+  <option value="Credito"selected>Credito</option>
+  </select><br>
+
+
+
+  <input type="submit" value="Enviar datos"><br>
   </fieldset>
-</form>
-  }
 </style>
