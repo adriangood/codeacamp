@@ -1,4 +1,4 @@
-class Course
+  class Course
 attr_accessor :course_name, :add_student
 attr_reader :students
 
