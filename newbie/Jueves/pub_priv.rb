@@ -14,11 +14,7 @@ attr_writer :salary
     "#{@name} <email: #{@email}> acct: *****#{new_deposit_acc=@deposit_acc.gsub(/[^\d]/, '')[-4,4]}"
   end
 
-  def coefficient
-    coefficients = { 1 => 0...1_000, 1.2 => 1_000...2_000, 1.4 => 2_000...5_000, 1.5 => 5_000..10_000 }
 
-    coefficients.find { |coefficient, range| range.include? @salary }.first
-  end
 
   def vacation_days
     coefficient * 7
@@ -26,6 +22,13 @@ attr_writer :salary
 
   def bonus
     coefficient * 1000
+  end
+
+private
+  def coefficient
+    coefficients = { 1 => 0...1_000, 1.2 => 1_000...2_000, 1.4 => 2_000...5_000, 1.5 => 5_000..10_000 }
+
+    coefficients.find { |coefficient, range| range.include? @salary }.first
   end
 end
 
