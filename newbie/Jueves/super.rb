@@ -1,16 +1,21 @@
-class People
-  def greeting
-    "Hello!"
+
+class SuperSay
+  def say(text)
+    text
+  end
+
+end
+
+class HtmlSay < SuperSay
+  def say(text)
+    "<p>"+ super + "</p>"
   end
 end
 
-class Women < People
-  def greeting
-    super + " from People class"
-  end
+class CssSay < SuperSay
 end
 
-
-wendy = Women.new
-p wendy.greeting
-#=> "Hello! from People class"
+doc=HtmlSay.new
+style=CssSay.new
+p doc.say("You've refactored") == "<p>You've refactored</p>"
+p style.say("I like to code")== "I like to code"
